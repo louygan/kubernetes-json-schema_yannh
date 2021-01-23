@@ -9,30 +9,34 @@
 #   X.Y.Z-local - relative references, useful to avoid the network dependency
 
 
-# All k8s versions, starting from 1.10
-K8S_VERSIONS=$(git ls-remote --refs --tags git@github.com:kubernetes/kubernetes.git | cut -d/ -f3 | grep -e '^v1\.[0-9]\{2\}\.[0-9]\{1,2\}$')
+# All k8s versions, starting from 1.13
+K8S_VERSIONS=$(git ls-remote --refs --tags git@github.com:kubernetes/kubernetes.git | cut -d/ -f3 | grep -e '^v1\.[0-9]\{2\}\.[0-9]\{1,2\}$' | grep -v -e  '^v1\.1[0-2]\{1\}' )
 OPENAPI2JSONSCHEMABIN="docker run -it -v ${PWD}:/out/schemas docker.pkg.github.com/yannh/openapi2jsonschema/openapi2jsonschema:latest"
 
-for K8S_VERSION in master $K8S_VERSIONS; do
+if [ -n "${K8S_VERSION_PREFIX}" ]; then
+  export K8S_VERSIONS=$(git ls-remote --refs --tags git@github.com:kubernetes/kubernetes.git | cut -d/ -f3 | grep -e '^'${K8S_VERSION_PREFIX} | grep -v beta)
+fi
+
+for K8S_VERSION in $K8S_VERSIONS master; do
   SCHEMA=https://raw.githubusercontent.com/kubernetes/kubernetes/${K8S_VERSION}/api/openapi-spec/swagger.json
   PREFIX=https://kubernetesjsonschema.dev/${K8S_VERSION}/_definitions.json
 
-  if [ ! -d "schemas/${K8S_VERSION}-standalone-strict" ]; then
+  if [ ! -d "${K8S_VERSION}-standalone-strict" ]; then
     $OPENAPI2JSONSCHEMABIN -o "schemas/${K8S_VERSION}-standalone-strict" --expanded --kubernetes --stand-alone --strict "${SCHEMA}"
     $OPENAPI2JSONSCHEMABIN -o "schemas/${K8S_VERSION}-standalone-strict" --kubernetes --stand-alone --strict "${SCHEMA}"
   fi
 
-  if [ ! -d "schemas/${K8S_VERSION}-standalone" ]; then
+  if [ ! -d "${K8S_VERSION}-standalone" ]; then
     $OPENAPI2JSONSCHEMABIN -o "schemas/${K8S_VERSION}-standalone" --expanded --kubernetes --stand-alone "${SCHEMA}"
     $OPENAPI2JSONSCHEMABIN -o "schemas/${K8S_VERSION}-standalone" --kubernetes --stand-alone "${SCHEMA}"
   fi
 
-  if [ ! -d "schemas/${K8S_VERSION}-local" ]; then
+  if [ ! -d "${K8S_VERSION}-local" ]; then
     $OPENAPI2JSONSCHEMABIN -o "schemas/${K8S_VERSION}-local" --expanded --kubernetes "${SCHEMA}"
     $OPENAPI2JSONSCHEMABIN -o "schemas/${K8S_VERSION}-local" --kubernetes "${SCHEMA}"
   fi
 
-  if [ ! -d "schemas/${K8S_VERSION}" ]; then
+  if [ ! -d "${K8S_VERSION}" ]; then
     $OPENAPI2JSONSCHEMABIN -o "schemas/${K8S_VERSION}" --expanded --kubernetes --prefix "${PREFIX}" "${SCHEMA}"
     $OPENAPI2JSONSCHEMABIN -o "schemas/${K8S_VERSION}" --kubernetes --prefix "${PREFIX}" "${SCHEMA}"
   fi
