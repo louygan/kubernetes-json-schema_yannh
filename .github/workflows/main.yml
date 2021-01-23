@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        prefix: ["v1.13", "v1.14", "v1.15"]
+        prefix: ["v1.13"]
     env:
       K8S_VERSION_PREFIX: ${{ matrix.prefix }}
     steps:
