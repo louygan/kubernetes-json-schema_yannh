@@ -14,7 +14,7 @@ K8S_VERSIONS=$(git ls-remote --refs --tags https://github.com/kubernetes/kuberne
 OPENAPI2JSONSCHEMABIN="docker run -i -v ${PWD}:/out/schemas docker.pkg.github.com/yannh/openapi2jsonschema/openapi2jsonschema:latest"
 
 if [ -n "${K8S_VERSION_PREFIX}" ]; then
-  export K8S_VERSIONS=$(git ls-remote --refs --tags https://github.com/kubernetes/kubernetes.git | cut -d/ -f3 | grep -e '^'${K8S_VERSION_PREFIX} | grep -v beta)
+  export K8S_VERSIONS=$(git ls-remote --refs --tags https://github.com/kubernetes/kubernetes.git | cut -d/ -f3 | grep -e '^'${K8S_VERSION_PREFIX} | grep -e '^v1\.[0-9]\{2\}\.[0-9]\{1,2\}$')
 fi
 
 for K8S_VERSION in $K8S_VERSIONS master; do
