@@ -1,5 +1,5 @@
 {
-  "description": "Event is a report of an event somewhere in the cluster.",
+  "description": "Event is a report of an event somewhere in the cluster.  Events have a limited retention time and triggers and messages may evolve with time.  Event consumers should not rely on the timing of an event with a given Reason reflecting a consistent underlying trigger, or the continued existence of events with that Reason.  Events should be treated as informative, best-effort, supplemental data.",
   "properties": {
     "action": {
       "description": "What action was taken/failed regarding to the Regarding object.",
@@ -281,7 +281,7 @@
           ]
         },
         "namespace": {
-          "description": "Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
+          "description": "Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
           "type": [
             "string",
             "null"
@@ -461,13 +461,6 @@
         "lastObservedTime": {
           "description": "MicroTime is version of Time with microsecond level precision.",
           "format": "date-time",
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "state": {
-          "description": "State of this Series: Ongoing or Finished Deprecated. Planned removal for 1.18",
           "type": [
             "string",
             "null"

@@ -154,11 +154,6 @@
           "version": "v1beta2"
         },
         {
-          "group": "auditregistration.k8s.io",
-          "kind": "DeleteOptions",
-          "version": "v1alpha1"
-        },
-        {
           "group": "authentication.k8s.io",
           "kind": "DeleteOptions",
           "version": "v1"
@@ -211,6 +206,11 @@
         {
           "group": "certificates.k8s.io",
           "kind": "DeleteOptions",
+          "version": "v1"
+        },
+        {
+          "group": "certificates.k8s.io",
+          "kind": "DeleteOptions",
           "version": "v1beta1"
         },
         {
@@ -236,6 +236,11 @@
         {
           "group": "events.k8s.io",
           "kind": "DeleteOptions",
+          "version": "v1"
+        },
+        {
+          "group": "events.k8s.io",
+          "kind": "DeleteOptions",
           "version": "v1beta1"
         },
         {
@@ -249,7 +254,17 @@
           "version": "v1alpha1"
         },
         {
+          "group": "flowcontrol.apiserver.k8s.io",
+          "kind": "DeleteOptions",
+          "version": "v1beta1"
+        },
+        {
           "group": "imagepolicy.k8s.io",
+          "kind": "DeleteOptions",
+          "version": "v1alpha1"
+        },
+        {
+          "group": "internal.apiserver.k8s.io",
           "kind": "DeleteOptions",
           "version": "v1alpha1"
         },
@@ -262,6 +277,11 @@
           "group": "networking.k8s.io",
           "kind": "DeleteOptions",
           "version": "v1beta1"
+        },
+        {
+          "group": "node.k8s.io",
+          "kind": "DeleteOptions",
+          "version": "v1"
         },
         {
           "group": "node.k8s.io",
@@ -307,11 +327,6 @@
           "group": "scheduling.k8s.io",
           "kind": "DeleteOptions",
           "version": "v1beta1"
-        },
-        {
-          "group": "settings.k8s.io",
-          "kind": "DeleteOptions",
-          "version": "v1alpha1"
         },
         {
           "group": "storage.k8s.io",
@@ -498,7 +513,7 @@
           ]
         },
         "namespace": {
-          "description": "Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
+          "description": "Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
           "type": [
             "string",
             "null"
