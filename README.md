@@ -1,5 +1,13 @@
 # Kubernetes JSON Schemas
 
+## Fork
+
+This is a fork from [instrumenta/kubernetes-json-schema](https://github.com/instrumenta/kubernetes-json-schema)
+with updated maintenance scripts for easier maintenance, as well as schemas for all recent
+Kubernetes versions.
+
+## Presentation
+
 While exploring tooling for Kubernetes I had need for schemas to
 describe the definition files, and went looking for something that
 didn't require either `kubectl` or similar installed or even a working
@@ -20,12 +28,6 @@ different flavours:
 
 Note that the Kubernetes API allows additional properties to be submitted,
 but `kubectl` acts like the strict flavour above.
-
-
-## kubernetesjsonschema.dev
-
-The schemas are now all available from [kubernetesjsonschema.dev](https://kubernetesjsonschema.dev), for instance
-the schema for v1 of the Pod object is Kubernetes 1.14.0 is available at: [kubernetesjsonschema.dev/v1.14.0-standalone/pod-v1.json](https://kubernetesjsonschema.dev/v1.14.0-standalone/pod-v1.json)
 
 ## Example
 
@@ -79,7 +81,9 @@ to the approach I ended up taking.
 
 ## Building the schemas yourself
 
-The tooling for generating these schemas is [openapi2jsonschema](https://github.com/garethr/openapi2jsonschema). 
+The tooling for generating these schemas is [a fork](https://github.com/yannh/openapi2jsonschema)
+from the original [openapi2jsonschema](https://github.com/yannh/openapi2jsonschema).
+
 It's not Kubernetes specific and should work with other OpenAPI
 APIs too. This should be useful if you're using a pre-release or otherwise
 modified version of Kubernetes, or something like OpenShift which extends the
