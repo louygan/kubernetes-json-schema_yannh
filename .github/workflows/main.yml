@@ -1,13 +1,10 @@
 name: ci
-on: push
+on:
+  schedule:
+    - cron: "10 10 */2 * *"
 jobs:
-  test:
+  gen:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        prefix: ["v1.13"]
-    env:
-      K8S_VERSION_PREFIX: ${{ matrix.prefix }}
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -16,3 +13,8 @@ jobs:
         run: make gen
 
       - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Adding new schemas
+          commit_user_name: Yann Hamon
+          commit_user_email: yann+github@mandragor.org
+          commit_author: Yann Hamon <yann+github@mandragor.org>
