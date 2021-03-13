@@ -499,13 +499,6 @@
     "ephemeral": {
       "description": "Represents an ephemeral volume that is handled by a normal storage driver.",
       "properties": {
-        "readOnly": {
-          "description": "Specifies a read-only configuration for the volume. Defaults to false (read/write).",
-          "type": [
-            "boolean",
-            "null"
-          ]
-        },
         "volumeClaimTemplate": {
           "description": "PersistentVolumeClaimTemplate is used to produce PersistentVolumeClaim objects as part of an EphemeralVolumeSource.",
           "properties": {

@@ -11,7 +11,7 @@
     "items": {
       "description": "Items is the list of CSIStorageCapacity objects.",
       "items": {
-        "$ref": "https://kubernetesjsonschema.dev/master/_definitions.json#/definitions/io.k8s.api.storage.v1alpha1.CSIStorageCapacity"
+        "$ref": "https://kubernetesjsonschema.dev/master/_definitions.json#/definitions/io.k8s.api.storage.v1beta1.CSIStorageCapacity"
       },
       "type": [
         "array",
@@ -45,7 +45,7 @@
     {
       "group": "storage.k8s.io",
       "kind": "CSIStorageCapacityList",
-      "version": "v1alpha1"
+      "version": "v1beta1"
     }
   ],
   "$schema": "http://json-schema.org/schema#"
