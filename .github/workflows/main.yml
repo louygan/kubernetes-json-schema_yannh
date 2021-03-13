@@ -10,6 +10,10 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
+      # Ensure master* is up-to-date
+      - name: delete master folders
+        run: rm -rf master*
+
       - name: generate
         run: make gen
 
