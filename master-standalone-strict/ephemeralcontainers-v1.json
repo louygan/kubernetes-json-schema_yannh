@@ -90,6 +90,7 @@
                         "object",
                         "null"
                       ],
+                      "x-kubernetes-map-type": "atomic",
                       "additionalProperties": false
                     },
                     "fieldRef": {
@@ -114,6 +115,7 @@
                         "object",
                         "null"
                       ],
+                      "x-kubernetes-map-type": "atomic",
                       "additionalProperties": false
                     },
                     "resourceFieldRef": {
@@ -154,6 +156,7 @@
                         "object",
                         "null"
                       ],
+                      "x-kubernetes-map-type": "atomic",
                       "additionalProperties": false
                     },
                     "secretKeyRef": {
@@ -185,6 +188,7 @@
                         "object",
                         "null"
                       ],
+                      "x-kubernetes-map-type": "atomic",
                       "additionalProperties": false
                     }
                   },
@@ -1878,6 +1882,7 @@
               "object",
               "null"
             ],
+            "x-kubernetes-map-type": "atomic",
             "additionalProperties": false
           },
           "type": [

@@ -89,7 +89,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "x-kubernetes-map-type": "atomic"
                     },
                     "fieldRef": {
                       "description": "ObjectFieldSelector selects an APIVersioned field of an object.",
@@ -112,7 +113,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "x-kubernetes-map-type": "atomic"
                     },
                     "resourceFieldRef": {
                       "description": "ResourceFieldSelector represents container resources (cpu, memory) and their output format",
@@ -151,7 +153,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "x-kubernetes-map-type": "atomic"
                     },
                     "secretKeyRef": {
                       "description": "SecretKeySelector selects a key of a Secret.",
@@ -181,7 +184,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "x-kubernetes-map-type": "atomic"
                     }
                   },
                   "type": [
@@ -1831,7 +1835,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "x-kubernetes-map-type": "atomic"
           },
           "type": [
             "array",

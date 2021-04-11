@@ -228,7 +228,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "x-kubernetes-map-type": "atomic"
           },
           "type": [
             "array",
@@ -636,7 +637,8 @@
                     "type": [
                       "object",
                       "null"
-                    ]
+                    ],
+                    "x-kubernetes-map-type": "atomic"
                   },
                   "type": [
                     "array",
@@ -780,7 +782,8 @@
                                     ]
                                   }
                                 },
-                                "type": "object"
+                                "type": "object",
+                                "x-kubernetes-map-type": "atomic"
                               },
                               "weight": {
                                 "description": "Weight associated with matching the corresponding nodeSelectorTerm, in the range 1-100.",
@@ -896,7 +899,8 @@
                                 "type": [
                                   "object",
                                   "null"
-                                ]
+                                ],
+                                "x-kubernetes-map-type": "atomic"
                               },
                               "type": "array"
                             }
@@ -907,7 +911,8 @@
                           "type": [
                             "object",
                             "null"
-                          ]
+                          ],
+                          "x-kubernetes-map-type": "atomic"
                         }
                       },
                       "type": [
@@ -1726,7 +1731,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 },
                                 "fieldRef": {
                                   "description": "ObjectFieldSelector selects an APIVersioned field of an object.",
@@ -1749,7 +1755,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 },
                                 "resourceFieldRef": {
                                   "description": "ResourceFieldSelector represents container resources (cpu, memory) and their output format",
@@ -1788,7 +1795,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 },
                                 "secretKeyRef": {
                                   "description": "SecretKeySelector selects a key of a Secret.",
@@ -1818,7 +1826,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 }
                               },
                               "type": [
@@ -3404,7 +3413,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 },
                                 "fieldRef": {
                                   "description": "ObjectFieldSelector selects an APIVersioned field of an object.",
@@ -3427,7 +3437,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 },
                                 "resourceFieldRef": {
                                   "description": "ResourceFieldSelector represents container resources (cpu, memory) and their output format",
@@ -3466,7 +3477,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 },
                                 "secretKeyRef": {
                                   "description": "SecretKeySelector selects a key of a Secret.",
@@ -3496,7 +3508,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 }
                               },
                               "type": [
@@ -5011,7 +5024,8 @@
                     "type": [
                       "object",
                       "null"
-                    ]
+                    ],
+                    "x-kubernetes-map-type": "atomic"
                   },
                   "type": [
                     "array",
@@ -5098,7 +5112,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 },
                                 "fieldRef": {
                                   "description": "ObjectFieldSelector selects an APIVersioned field of an object.",
@@ -5121,7 +5136,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 },
                                 "resourceFieldRef": {
                                   "description": "ResourceFieldSelector represents container resources (cpu, memory) and their output format",
@@ -5160,7 +5176,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 },
                                 "secretKeyRef": {
                                   "description": "SecretKeySelector selects a key of a Secret.",
@@ -5190,7 +5207,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 }
                               },
                               "type": [
@@ -7290,7 +7308,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "user": {
                             "description": "Optional: User is the rados user name, default is admin More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it",
@@ -7339,7 +7358,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "volumeID": {
                             "description": "volume id used to identify the volume in cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md",
@@ -7449,7 +7469,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "readOnly": {
                             "description": "Specifies a read-only configuration for the volume. Defaults to false (read/write).",
@@ -7517,7 +7538,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 },
                                 "mode": {
                                   "description": "Optional: mode bits used to set permissions on this file, must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.",
@@ -7568,7 +7590,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 }
                               },
                               "required": [
@@ -7835,7 +7858,8 @@
                                       "type": [
                                         "object",
                                         "null"
-                                      ]
+                                      ],
+                                      "x-kubernetes-map-type": "atomic"
                                     },
                                     "type": [
                                       "array",
@@ -7913,7 +7937,8 @@
                                     "type": [
                                       "object",
                                       "null"
-                                    ]
+                                    ],
+                                    "x-kubernetes-map-type": "atomic"
                                   },
                                   "resources": {
                                     "description": "ResourceRequirements describes the compute resource requirements.",
@@ -8180,7 +8205,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           }
                         },
                         "required": [
@@ -8414,7 +8440,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "targetPortal": {
                             "description": "iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).",
@@ -8643,7 +8670,8 @@
                                             "type": [
                                               "object",
                                               "null"
-                                            ]
+                                            ],
+                                            "x-kubernetes-map-type": "atomic"
                                           },
                                           "mode": {
                                             "description": "Optional: mode bits used to set permissions on this file, must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.",
@@ -8694,7 +8722,8 @@
                                             "type": [
                                               "object",
                                               "null"
-                                            ]
+                                            ],
+                                            "x-kubernetes-map-type": "atomic"
                                           }
                                         },
                                         "required": [
@@ -8931,7 +8960,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "user": {
                             "description": "The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
@@ -8989,7 +9019,8 @@
                                 ]
                               }
                             },
-                            "type": "object"
+                            "type": "object",
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "sslEnabled": {
                             "description": "Flag to enable/disable SSL communication with Gateway, default false",
@@ -9132,7 +9163,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "volumeName": {
                             "description": "VolumeName is the human-readable name of the StorageOS volume.  Volume names are only unique within a namespace.",

@@ -230,6 +230,7 @@
               "object",
               "null"
             ],
+            "x-kubernetes-map-type": "atomic",
             "additionalProperties": false
           },
           "type": [
@@ -310,6 +311,7 @@
             "object",
             "null"
           ],
+          "x-kubernetes-map-type": "atomic",
           "additionalProperties": false
         },
         "resources": {

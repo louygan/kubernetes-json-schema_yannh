@@ -243,7 +243,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "x-kubernetes-map-type": "atomic"
                 },
                 "type": [
                   "array",
@@ -321,7 +322,8 @@
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "x-kubernetes-map-type": "atomic"
               },
               "resources": {
                 "description": "ResourceRequirements describes the compute resource requirements.",

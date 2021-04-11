@@ -243,7 +243,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "x-kubernetes-map-type": "atomic"
                 },
                 "type": [
                   "array",
@@ -324,7 +325,7 @@
                   ]
                 },
                 "resources": {
-                  "description": "Resources is a list of resources this rule applies to.  ResourceAll represents all resources.",
+                  "description": "Resources is a list of resources this rule applies to. '*' represents all resources.",
                   "items": {
                     "type": [
                       "string",
@@ -337,7 +338,7 @@
                   ]
                 },
                 "verbs": {
-                  "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule.  VerbAll represents all kinds.",
+                  "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule. '*' represents all verbs.",
                   "items": {
                     "type": [
                       "string",

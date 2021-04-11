@@ -287,7 +287,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "x-kubernetes-map-type": "atomic"
           },
           "type": [
             "array",
@@ -393,7 +394,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "x-kubernetes-map-type": "atomic"
     },
     "related": {
       "description": "ObjectReference contains enough information to let you inspect or modify the referred object.",
@@ -451,7 +453,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "x-kubernetes-map-type": "atomic"
     },
     "reportingController": {
       "description": "reportingController is the name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`. This field cannot be empty for new Events.",

@@ -228,7 +228,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "x-kubernetes-map-type": "atomic"
           },
           "type": [
             "array",
@@ -288,7 +289,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "x-kubernetes-map-type": "atomic"
     },
     "subjects": {
       "description": "Subjects holds references to the objects the role applies to.",
@@ -325,7 +327,8 @@
         "type": [
           "object",
           "null"
-        ]
+        ],
+        "x-kubernetes-map-type": "atomic"
       },
       "type": [
         "array",

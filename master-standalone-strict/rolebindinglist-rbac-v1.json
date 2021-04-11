@@ -245,6 +245,7 @@
                     "object",
                     "null"
                   ],
+                  "x-kubernetes-map-type": "atomic",
                   "additionalProperties": false
                 },
                 "type": [
@@ -304,6 +305,7 @@
               "name"
             ],
             "type": "object",
+            "x-kubernetes-map-type": "atomic",
             "additionalProperties": false
           },
           "subjects": {
@@ -342,6 +344,7 @@
                 "object",
                 "null"
               ],
+              "x-kubernetes-map-type": "atomic",
               "additionalProperties": false
             },
             "type": [

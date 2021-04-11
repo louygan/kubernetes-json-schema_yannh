@@ -243,7 +243,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "x-kubernetes-map-type": "atomic"
                 },
                 "type": [
                   "array",
@@ -353,7 +354,8 @@
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "x-kubernetes-map-type": "atomic"
               },
               "scopes": {
                 "description": "A collection of filters that must match each object tracked by a quota. If not specified, the quota matches all objects.",

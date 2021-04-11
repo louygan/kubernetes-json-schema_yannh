@@ -35,6 +35,7 @@
     "port"
   ],
   "type": "object",
+  "x-kubernetes-map-type": "atomic",
   "additionalProperties": false,
   "$schema": "http://json-schema.org/schema#"
 }

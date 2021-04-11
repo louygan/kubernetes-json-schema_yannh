@@ -225,7 +225,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "x-kubernetes-map-type": "atomic"
           },
           "type": [
             "array",
@@ -293,7 +294,8 @@
               "type": [
                 "object",
                 "null"
-              ]
+              ],
+              "x-kubernetes-map-type": "atomic"
             },
             "serviceName": {
               "description": "Specifies the name of the referenced service.",
@@ -380,7 +382,8 @@
                               "type": [
                                 "object",
                                 "null"
-                              ]
+                              ],
+                              "x-kubernetes-map-type": "atomic"
                             },
                             "serviceName": {
                               "description": "Specifies the name of the referenced service.",

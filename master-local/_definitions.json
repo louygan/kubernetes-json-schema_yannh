@@ -2926,7 +2926,8 @@
         "kind",
         "name"
       ],
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.autoscaling.v1.HorizontalPodAutoscaler": {
       "description": "configuration of a horizontal pod autoscaler.",
@@ -5906,7 +5907,8 @@
       "required": [
         "key"
       ],
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.ConfigMapList": {
       "description": "ConfigMapList is a resource containing a list of ConfigMap objects.",
@@ -6446,7 +6448,8 @@
       "required": [
         "ip"
       ],
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.EndpointPort": {
       "description": "EndpointPort is a tuple that describes a single port.",
@@ -6472,7 +6475,8 @@
       "required": [
         "port"
       ],
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.EndpointSubset": {
       "description": "EndpointSubset is a group of addresses with a common set of ports. The expanded set of endpoints is the Cartesian product of Addresses x Ports. For example, given:\n  {\n    Addresses: [{\"ip\": \"10.10.1.1\"}, {\"ip\": \"10.10.2.2\"}],\n    Ports:     [{\"name\": \"a\", \"port\": 8675}, {\"name\": \"b\", \"port\": 309}]\n  }\nThe resulting set of endpoints can be viewed as:\n    a: [ 10.10.1.1:8675, 10.10.2.2:8675 ],\n    b: [ 10.10.1.1:309, 10.10.2.2:309 ]",
@@ -7621,7 +7625,8 @@
           "type": "string"
         }
       },
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.LocalVolumeSource": {
       "description": "Local represents directly-attached storage with node affinity (Beta feature)",
@@ -7994,7 +7999,8 @@
       "required": [
         "nodeSelectorTerms"
       ],
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.NodeSelectorRequirement": {
       "description": "A node selector requirement is a selector that contains values, a key, and an operator that relates the key and values.",
@@ -8039,7 +8045,8 @@
           "type": "array"
         }
       },
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.NodeSpec": {
       "description": "NodeSpec describes the attributes that a node is created with.",
@@ -8230,7 +8237,8 @@
       "required": [
         "fieldPath"
       ],
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.ObjectReference": {
       "description": "ObjectReference contains enough information to let you inspect or modify the referred object.",
@@ -8264,7 +8272,8 @@
           "type": "string"
         }
       },
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.PersistentVolume": {
       "description": "PersistentVolume (PV) is a storage resource provisioned by an administrator. It is analogous to a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes",
@@ -9827,7 +9836,8 @@
       "required": [
         "resource"
       ],
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.ResourceQuota": {
       "description": "ResourceQuota sets aggregate quota restrictions enforced per namespace",
@@ -10102,7 +10112,8 @@
           "type": "array"
         }
       },
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.ScopedResourceSelectorRequirement": {
       "description": "A scoped-resource selector requirement is a selector that contains values, a scope name, and an operator that relates the scope name and values.",
@@ -10238,7 +10249,8 @@
       "required": [
         "key"
       ],
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.SecretList": {
       "description": "SecretList is a list of Secret.",
@@ -10311,7 +10323,8 @@
           "type": "string"
         }
       },
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.SecretVolumeSource": {
       "description": "Adapts a Secret into a volume.\n\nThe contents of the target Secret's Data field will be presented in a volume as files using the keys in the Data field as the file names. Secret volumes support ownership management and SELinux relabeling.",
@@ -10931,7 +10944,8 @@
           "type": "array"
         }
       },
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.TopologySpreadConstraint": {
       "description": "TopologySpreadConstraint specifies how to spread matching pods among the given topology.",
@@ -10981,7 +10995,8 @@
         "kind",
         "name"
       ],
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.core.v1.Volume": {
       "description": "Volume represents a named volume in a pod that may be accessed by any container in the pod.",
@@ -11359,7 +11374,8 @@
           "type": "string"
         }
       },
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.discovery.v1.EndpointSlice": {
       "description": "EndpointSlice represents a subset of the endpoints that implement a service. For a given service there may be multiple EndpointSlice objects, selected by labels, which must be joined to produce the full set of endpoints.",
@@ -14853,14 +14869,14 @@
           "type": "array"
         },
         "resources": {
-          "description": "Resources is a list of resources this rule applies to.  ResourceAll represents all resources.",
+          "description": "Resources is a list of resources this rule applies to. '*' represents all resources.",
           "items": {
             "type": "string"
           },
           "type": "array"
         },
         "verbs": {
-          "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule.  VerbAll represents all kinds.",
+          "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule. '*' represents all verbs.",
           "items": {
             "type": "string"
           },
@@ -15046,7 +15062,8 @@
         "kind",
         "name"
       ],
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.rbac.v1.Subject": {
       "description": "Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference, or a value for non-objects such as user and group names.",
@@ -15072,7 +15089,8 @@
         "kind",
         "name"
       ],
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.api.rbac.v1alpha1.AggregationRule": {
       "description": "AggregationRule describes how to locate ClusterRoles to aggregate into the ClusterRole",
@@ -15269,14 +15287,14 @@
           "type": "array"
         },
         "resources": {
-          "description": "Resources is a list of resources this rule applies to.  ResourceAll represents all resources.",
+          "description": "Resources is a list of resources this rule applies to. '*' represents all resources.",
           "items": {
             "type": "string"
           },
           "type": "array"
         },
         "verbs": {
-          "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule.  VerbAll represents all kinds.",
+          "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule. '*' represents all verbs.",
           "items": {
             "type": "string"
           },
@@ -15692,7 +15710,7 @@
           "type": "array"
         },
         "verbs": {
-          "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule.  VerbAll represents all kinds.",
+          "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule. '*' represents all verbs.",
           "items": {
             "type": "string"
           },
@@ -16411,7 +16429,8 @@
           "items": {
             "$ref": "#/definitions/io.k8s.api.core.v1.TopologySelectorTerm"
           },
-          "type": "array"
+          "type": "array",
+          "x-kubernetes-list-type": "atomic"
         },
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -17270,7 +17289,8 @@
           "items": {
             "$ref": "#/definitions/io.k8s.api.core.v1.TopologySelectorTerm"
           },
-          "type": "array"
+          "type": "array",
+          "x-kubernetes-list-type": "atomic"
         },
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -19640,7 +19660,8 @@
         "name",
         "uid"
       ],
-      "type": "object"
+      "type": "object",
+      "x-kubernetes-map-type": "atomic"
     },
     "io.k8s.apimachinery.pkg.apis.meta.v1.Patch": {
       "description": "Patch is provided to give a concrete name and type to the Kubernetes PATCH request body.",

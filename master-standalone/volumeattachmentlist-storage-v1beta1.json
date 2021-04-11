@@ -243,7 +243,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "x-kubernetes-map-type": "atomic"
                 },
                 "type": [
                   "array",
@@ -509,7 +510,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "user": {
                             "description": "Optional: User is the rados user name, default is admin More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it",
@@ -565,7 +567,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "volumeID": {
                             "description": "volume id used to identify the volume in cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md",
@@ -636,7 +639,8 @@
                         "type": [
                           "object",
                           "null"
-                        ]
+                        ],
+                        "x-kubernetes-map-type": "atomic"
                       },
                       "csi": {
                         "description": "Represents storage that is managed by an external CSI volume driver (Beta feature)",
@@ -662,7 +666,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "controllerPublishSecretRef": {
                             "description": "SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace",
@@ -685,7 +690,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "driver": {
                             "description": "Driver is the name of the driver to use for this volume. Required.",
@@ -719,7 +725,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "nodeStageSecretRef": {
                             "description": "SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace",
@@ -742,7 +749,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "readOnly": {
                             "description": "Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false (read/write).",
@@ -890,7 +898,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           }
                         },
                         "required": [
@@ -1108,7 +1117,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "targetPortal": {
                             "description": "iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).",
@@ -1286,7 +1296,8 @@
                                   "type": [
                                     "object",
                                     "null"
-                                  ]
+                                  ],
+                                  "x-kubernetes-map-type": "atomic"
                                 },
                                 "type": "array"
                               }
@@ -1297,7 +1308,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           }
                         },
                         "type": [
@@ -1480,7 +1492,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "user": {
                             "description": "The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
@@ -1545,7 +1558,8 @@
                                 ]
                               }
                             },
-                            "type": "object"
+                            "type": "object",
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "sslEnabled": {
                             "description": "Flag to enable/disable SSL communication with Gateway, default false",
@@ -1670,7 +1684,8 @@
                             "type": [
                               "object",
                               "null"
-                            ]
+                            ],
+                            "x-kubernetes-map-type": "atomic"
                           },
                           "volumeName": {
                             "description": "VolumeName is the human-readable name of the StorageOS volume.  Volume names are only unique within a namespace.",

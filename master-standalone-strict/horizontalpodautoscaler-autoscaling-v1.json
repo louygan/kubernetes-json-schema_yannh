@@ -230,6 +230,7 @@
               "object",
               "null"
             ],
+            "x-kubernetes-map-type": "atomic",
             "additionalProperties": false
           },
           "type": [
@@ -307,6 +308,7 @@
             "name"
           ],
           "type": "object",
+          "x-kubernetes-map-type": "atomic",
           "additionalProperties": false
         },
         "targetCPUUtilizationPercentage": {

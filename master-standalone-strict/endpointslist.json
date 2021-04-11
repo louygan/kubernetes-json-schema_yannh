@@ -239,6 +239,7 @@
                     "object",
                     "null"
                   ],
+                  "x-kubernetes-map-type": "atomic",
                   "additionalProperties": false
                 },
                 "type": [
@@ -361,6 +362,7 @@
                           "object",
                           "null"
                         ],
+                        "x-kubernetes-map-type": "atomic",
                         "additionalProperties": false
                       }
                     },
@@ -371,6 +373,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   },
                   "type": [
@@ -458,6 +461,7 @@
                           "object",
                           "null"
                         ],
+                        "x-kubernetes-map-type": "atomic",
                         "additionalProperties": false
                       }
                     },
@@ -468,6 +472,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   },
                   "type": [
@@ -514,6 +519,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   },
                   "type": [

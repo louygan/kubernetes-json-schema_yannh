@@ -245,6 +245,7 @@
                     "object",
                     "null"
                   ],
+                  "x-kubernetes-map-type": "atomic",
                   "additionalProperties": false
                 },
                 "type": [
@@ -502,6 +503,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   },
                   "user": {
@@ -560,6 +562,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   },
                   "volumeID": {
@@ -633,6 +636,7 @@
                   "object",
                   "null"
                 ],
+                "x-kubernetes-map-type": "atomic",
                 "additionalProperties": false
               },
               "csi": {
@@ -660,6 +664,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   },
                   "controllerPublishSecretRef": {
@@ -684,6 +689,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   },
                   "driver": {
@@ -719,6 +725,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   },
                   "nodeStageSecretRef": {
@@ -743,6 +750,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   },
                   "readOnly": {
@@ -894,6 +902,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   }
                 },
@@ -1118,6 +1127,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   },
                   "targetPortal": {
@@ -1302,6 +1312,7 @@
                             "object",
                             "null"
                           ],
+                          "x-kubernetes-map-type": "atomic",
                           "additionalProperties": false
                         },
                         "type": "array"
@@ -1314,6 +1325,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   }
                 },
@@ -1502,6 +1514,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   },
                   "user": {
@@ -1569,6 +1582,7 @@
                       }
                     },
                     "type": "object",
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   },
                   "sslEnabled": {
@@ -1696,6 +1710,7 @@
                       "object",
                       "null"
                     ],
+                    "x-kubernetes-map-type": "atomic",
                     "additionalProperties": false
                   },
                   "volumeName": {

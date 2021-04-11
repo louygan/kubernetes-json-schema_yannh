@@ -290,6 +290,7 @@
               "object",
               "null"
             ],
+            "x-kubernetes-map-type": "atomic",
             "additionalProperties": false
           },
           "type": [
@@ -398,6 +399,7 @@
         "object",
         "null"
       ],
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "related": {
@@ -457,6 +459,7 @@
         "object",
         "null"
       ],
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "reportingController": {

@@ -3016,6 +3016,7 @@
         "name"
       ],
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.autoscaling.v1.HorizontalPodAutoscaler": {
@@ -6097,6 +6098,7 @@
         "key"
       ],
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.ConfigMapList": {
@@ -6655,6 +6657,7 @@
         "ip"
       ],
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.EndpointPort": {
@@ -6682,6 +6685,7 @@
         "port"
       ],
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.EndpointSubset": {
@@ -7869,6 +7873,7 @@
         }
       },
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.LocalVolumeSource": {
@@ -8258,6 +8263,7 @@
         "nodeSelectorTerms"
       ],
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.NodeSelectorRequirement": {
@@ -8305,6 +8311,7 @@
         }
       },
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.NodeSpec": {
@@ -8500,6 +8507,7 @@
         "fieldPath"
       ],
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.ObjectReference": {
@@ -8535,6 +8543,7 @@
         }
       },
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.PersistentVolume": {
@@ -10140,6 +10149,7 @@
         "resource"
       ],
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.ResourceQuota": {
@@ -10424,6 +10434,7 @@
         }
       },
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.ScopedResourceSelectorRequirement": {
@@ -10565,6 +10576,7 @@
         "key"
       ],
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.SecretList": {
@@ -10641,6 +10653,7 @@
         }
       },
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.SecretVolumeSource": {
@@ -11280,6 +11293,7 @@
         }
       },
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.TopologySpreadConstraint": {
@@ -11332,6 +11346,7 @@
         "name"
       ],
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.core.v1.Volume": {
@@ -11722,6 +11737,7 @@
         }
       },
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.discovery.v1.EndpointSlice": {
@@ -15340,14 +15356,14 @@
           "type": "array"
         },
         "resources": {
-          "description": "Resources is a list of resources this rule applies to.  ResourceAll represents all resources.",
+          "description": "Resources is a list of resources this rule applies to. '*' represents all resources.",
           "items": {
             "type": "string"
           },
           "type": "array"
         },
         "verbs": {
-          "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule.  VerbAll represents all kinds.",
+          "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule. '*' represents all verbs.",
           "items": {
             "type": "string"
           },
@@ -15539,6 +15555,7 @@
         "name"
       ],
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.rbac.v1.Subject": {
@@ -15566,6 +15583,7 @@
         "name"
       ],
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.api.rbac.v1alpha1.AggregationRule": {
@@ -15768,14 +15786,14 @@
           "type": "array"
         },
         "resources": {
-          "description": "Resources is a list of resources this rule applies to.  ResourceAll represents all resources.",
+          "description": "Resources is a list of resources this rule applies to. '*' represents all resources.",
           "items": {
             "type": "string"
           },
           "type": "array"
         },
         "verbs": {
-          "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule.  VerbAll represents all kinds.",
+          "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule. '*' represents all verbs.",
           "items": {
             "type": "string"
           },
@@ -16203,7 +16221,7 @@
           "type": "array"
         },
         "verbs": {
-          "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule.  VerbAll represents all kinds.",
+          "description": "Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule. '*' represents all verbs.",
           "items": {
             "type": "string"
           },
@@ -16942,7 +16960,8 @@
           "items": {
             "$ref": "#/definitions/io.k8s.api.core.v1.TopologySelectorTerm"
           },
-          "type": "array"
+          "type": "array",
+          "x-kubernetes-list-type": "atomic"
         },
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -17828,7 +17847,8 @@
           "items": {
             "$ref": "#/definitions/io.k8s.api.core.v1.TopologySelectorTerm"
           },
-          "type": "array"
+          "type": "array",
+          "x-kubernetes-list-type": "atomic"
         },
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -20255,6 +20275,7 @@
         "uid"
       ],
       "type": "object",
+      "x-kubernetes-map-type": "atomic",
       "additionalProperties": false
     },
     "io.k8s.apimachinery.pkg.apis.meta.v1.Patch": {
