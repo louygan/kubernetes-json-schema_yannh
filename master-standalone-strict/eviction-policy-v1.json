@@ -8,7 +8,7 @@
         "null"
       ],
       "enum": [
-        "policy/v1beta1"
+        "policy/v1"
       ]
     },
     "deleteOptions": {
@@ -664,7 +664,7 @@
     {
       "group": "policy",
       "kind": "Eviction",
-      "version": "v1beta1"
+      "version": "v1"
     }
   ],
   "additionalProperties": false,
