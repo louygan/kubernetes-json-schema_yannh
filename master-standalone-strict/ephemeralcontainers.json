@@ -87,6 +87,7 @@
                         "object",
                         "null"
                       ],
+                      "x-kubernetes-map-type": "atomic",
                       "additionalProperties": false
                     },
                     "fieldRef": {
@@ -111,6 +112,7 @@
                         "object",
                         "null"
                       ],
+                      "x-kubernetes-map-type": "atomic",
                       "additionalProperties": false
                     },
                     "resourceFieldRef": {
@@ -151,6 +153,7 @@
                         "object",
                         "null"
                       ],
+                      "x-kubernetes-map-type": "atomic",
                       "additionalProperties": false
                     },
                     "secretKeyRef": {
@@ -182,6 +185,7 @@
                         "object",
                         "null"
                       ],
+                      "x-kubernetes-map-type": "atomic",
                       "additionalProperties": false
                     }
                   },
@@ -773,6 +777,14 @@
                 ],
                 "additionalProperties": false
               },
+              "terminationGracePeriodSeconds": {
+                "description": "Optional duration in seconds the pod needs to terminate gracefully upon probe failure. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process. If this value is nil, the pod's terminationGracePeriodSeconds will be used. Otherwise, this value overrides the value provided by the pod spec. Value must be non-negative integer. The value zero indicates stop immediately via the kill signal (no opportunity to shut down). This is an alpha field and requires enabling ProbeTerminationGracePeriod feature gate.",
+                "format": "int64",
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
               "timeoutSeconds": {
                 "description": "Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes",
                 "format": "int32",
@@ -1018,6 +1030,14 @@
                   "null"
                 ],
                 "additionalProperties": false
+              },
+              "terminationGracePeriodSeconds": {
+                "description": "Optional duration in seconds the pod needs to terminate gracefully upon probe failure. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process. If this value is nil, the pod's terminationGracePeriodSeconds will be used. Otherwise, this value overrides the value provided by the pod spec. Value must be non-negative integer. The value zero indicates stop immediately via the kill signal (no opportunity to shut down). This is an alpha field and requires enabling ProbeTerminationGracePeriod feature gate.",
+                "format": "int64",
+                "type": [
+                  "integer",
+                  "null"
+                ]
               },
               "timeoutSeconds": {
                 "description": "Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes",
@@ -1461,6 +1481,14 @@
                 ],
                 "additionalProperties": false
               },
+              "terminationGracePeriodSeconds": {
+                "description": "Optional duration in seconds the pod needs to terminate gracefully upon probe failure. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process. If this value is nil, the pod's terminationGracePeriodSeconds will be used. Otherwise, this value overrides the value provided by the pod spec. Value must be non-negative integer. The value zero indicates stop immediately via the kill signal (no opportunity to shut down). This is an alpha field and requires enabling ProbeTerminationGracePeriod feature gate.",
+                "format": "int64",
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
               "timeoutSeconds": {
                 "description": "Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes",
                 "format": "int32",
@@ -1771,6 +1799,13 @@
                   "null"
                 ]
               },
+              "subresource": {
+                "description": "Subresource is the name of the subresource used to update that object, or empty string if the object was updated through the main resource. The value of this field is used to distinguish between managers, even if they share the same name. For example, a status update will be distinct from a regular update using the same manager name. Note that the APIVersion field is not related to the Subresource field and it always corresponds to the version of the main resource.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
               "time": {
                 "description": "Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.",
                 "format": "date-time",
@@ -1851,6 +1886,7 @@
               "object",
               "null"
             ],
+            "x-kubernetes-map-type": "atomic",
             "additionalProperties": false
           },
           "type": [
