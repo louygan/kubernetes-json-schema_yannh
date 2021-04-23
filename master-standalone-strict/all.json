@@ -655,9 +655,6 @@
       "$ref": "_definitions.json#/definitions/io.k8s.api.core.v1.EphemeralContainer"
     },
     {
-      "$ref": "_definitions.json#/definitions/io.k8s.api.core.v1.EphemeralContainers"
-    },
-    {
       "$ref": "_definitions.json#/definitions/io.k8s.api.core.v1.EphemeralVolumeSource"
     },
     {
