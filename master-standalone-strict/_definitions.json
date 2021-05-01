@@ -2224,7 +2224,8 @@
           ]
         },
         "metadata": {
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta",
+          "description": "Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata"
         },
         "spec": {
           "$ref": "#/definitions/io.k8s.api.authorization.v1.SubjectAccessReviewSpec",
@@ -2375,7 +2376,8 @@
           ]
         },
         "metadata": {
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta",
+          "description": "Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata"
         },
         "spec": {
           "$ref": "#/definitions/io.k8s.api.authorization.v1.SelfSubjectAccessReviewSpec",
@@ -2429,7 +2431,8 @@
           ]
         },
         "metadata": {
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta",
+          "description": "Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata"
         },
         "spec": {
           "$ref": "#/definitions/io.k8s.api.authorization.v1.SelfSubjectRulesReviewSpec",
@@ -2454,6 +2457,7 @@
       "additionalProperties": false
     },
     "io.k8s.api.authorization.v1.SelfSubjectRulesReviewSpec": {
+      "description": "SelfSubjectRulesReviewSpec defines the specification for SelfSubjectRulesReview.",
       "properties": {
         "namespace": {
           "description": "Namespace to evaluate rules for. Required.",
@@ -2478,7 +2482,8 @@
           ]
         },
         "metadata": {
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta",
+          "description": "Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata"
         },
         "spec": {
           "$ref": "#/definitions/io.k8s.api.authorization.v1.SubjectAccessReviewSpec",
@@ -2617,7 +2622,8 @@
           ]
         },
         "metadata": {
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta",
+          "description": "Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata"
         },
         "spec": {
           "$ref": "#/definitions/io.k8s.api.authorization.v1beta1.SubjectAccessReviewSpec",
@@ -2768,7 +2774,8 @@
           ]
         },
         "metadata": {
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta",
+          "description": "Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata"
         },
         "spec": {
           "$ref": "#/definitions/io.k8s.api.authorization.v1beta1.SelfSubjectAccessReviewSpec",
@@ -2822,7 +2829,8 @@
           ]
         },
         "metadata": {
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta",
+          "description": "Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata"
         },
         "spec": {
           "$ref": "#/definitions/io.k8s.api.authorization.v1beta1.SelfSubjectRulesReviewSpec",
@@ -2847,6 +2855,7 @@
       "additionalProperties": false
     },
     "io.k8s.api.authorization.v1beta1.SelfSubjectRulesReviewSpec": {
+      "description": "SelfSubjectRulesReviewSpec defines the specification for SelfSubjectRulesReview.",
       "properties": {
         "namespace": {
           "description": "Namespace to evaluate rules for. Required.",
@@ -2871,7 +2880,8 @@
           ]
         },
         "metadata": {
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta",
+          "description": "Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata"
         },
         "spec": {
           "$ref": "#/definitions/io.k8s.api.authorization.v1beta1.SubjectAccessReviewSpec",
@@ -6298,7 +6308,7 @@
         },
         "securityContext": {
           "$ref": "#/definitions/io.k8s.api.core.v1.SecurityContext",
-          "description": "Security options the pod should run with. More info: https://kubernetes.io/docs/concepts/policy/security-context/ More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/"
+          "description": "Security options the pod should run with. More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/"
         },
         "startupProbe": {
           "$ref": "#/definitions/io.k8s.api.core.v1.Probe",

@@ -105,7 +105,7 @@
     },
     "securityContext": {
       "$ref": "_definitions.json#/definitions/io.k8s.api.core.v1.SecurityContext",
-      "description": "Security options the pod should run with. More info: https://kubernetes.io/docs/concepts/policy/security-context/ More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/"
+      "description": "Security options the pod should run with. More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/"
     },
     "startupProbe": {
       "$ref": "_definitions.json#/definitions/io.k8s.api.core.v1.Probe",
