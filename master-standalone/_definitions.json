@@ -1860,13 +1860,16 @@
           ]
         },
         "metadata": {
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta",
+          "description": "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata"
         },
         "spec": {
-          "$ref": "#/definitions/io.k8s.api.authentication.v1.TokenRequestSpec"
+          "$ref": "#/definitions/io.k8s.api.authentication.v1.TokenRequestSpec",
+          "description": "Spec holds information about the request being evaluated"
         },
         "status": {
-          "$ref": "#/definitions/io.k8s.api.authentication.v1.TokenRequestStatus"
+          "$ref": "#/definitions/io.k8s.api.authentication.v1.TokenRequestStatus",
+          "description": "Status is filled in by the server and indicates whether the token can be authenticated."
         }
       },
       "required": [
@@ -1939,7 +1942,8 @@
           ]
         },
         "metadata": {
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta",
+          "description": "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata"
         },
         "spec": {
           "$ref": "#/definitions/io.k8s.api.authentication.v1.TokenReviewSpec",
@@ -2050,7 +2054,8 @@
           ]
         },
         "metadata": {
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta",
+          "description": "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata"
         },
         "spec": {
           "$ref": "#/definitions/io.k8s.api.authentication.v1beta1.TokenReviewSpec",
@@ -2058,7 +2063,7 @@
         },
         "status": {
           "$ref": "#/definitions/io.k8s.api.authentication.v1beta1.TokenReviewStatus",
-          "description": "Status is filled in by the server and indicates whether the request can be authenticated."
+          "description": "Status is filled in by the server and indicates whether the token can be authenticated."
         }
       },
       "required": [
